@@ -1,0 +1,175 @@
+body {
+  background-color: darkgray;
+  box-sizing: content-box;
+  margin: 2rem 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  background-color: rgb(116, 116, 187);
+  padding: 0rem 0rem 3rem 2rem;
+  border: 5px solid black;
+  margin-bottom: 2rem;
+}
+
+h1{
+  padding-top: .5rem;
+  font-size: 3rem;
+}
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  align-items: center;
+}
+.app li{
+  padding-bottom: .75rem;
+}
+
+.aboutMe{
+  background-color: aquamarine;
+  width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  list-style: none;
+}
+.aboutMe li{
+  padding-bottom: 1rem;
+}
+.FreeTime{
+  background-color: darkorange;
+  width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  list-style: none;
+}
+.Hobbies{
+  background-color: blue;
+  width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  list-style: none;
+}
+
+.User{
+  padding: 1.5rem 3rem 3rem 3rem;
+  border-radius: 1rem;
+  width: 250px;
+  background-color: green;
+  text-align: center;
+}
+.User div{
+  padding-bottom: 1rem;
+}
+.User:nth-child(2){
+  background-color: darkred;
+}
+.User:nth-child(3){
+  background-color:darkcyan;
+}
+
+.Module{
+  padding: 1.5rem 3rem 3rem 3rem;
+  border-radius: 1rem;
+  width: 250px;
+  background-color: greenyellow;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.Module div{
+  padding-bottom: 1rem;
+}
+.Module:nth-child(2){
+  background-color: red;
+}
+
+/* TAREA EJERCICIO 7 */
+#tarea{
+  background-image: url("./images/tareafondo.jpg");
+  background-size: cover;
+  border: 5px solid white;
+}
+#tarea h1{
+  color:white;
+}
+.espacio{
+  padding: 1.5rem;
+}
+.Card{
+  width: 300px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  list-style: none;
+}
+
+#clase3 div{
+    justify-content: center;
+}
+.boton1{
+  margin-left: 2rem;
+  border-radius: 2rem;
+  background-color: darkcyan;
+  color: wheat;
+}
+
+/* EJERCICIO CLASE 3 - APAGAR Y PRENDER FOCO */
+.exerciseFocus{
+  background-color: black;
+  border: 5px solid white;
+}
+.exerciseFocus h2{
+  color: #fff;
+}
+.foco{
+  width: 135px;
+  height: 200px;
+  background-image: url("./images/foco.jpg");
+  background-size: 200%;
+}
+.botonFoco{
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  background-color: firebrick;
+  color: blanchedalmond;
+}
+/*********************************************/
+
+/* CLASE 4 */
+.clase4{
+  max-width: 400px;
+  min-height: 550px;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 30px;
+  padding:0rem 1rem 2rem 2rem;
+  justify-content: center;
+  flex-direction: column;
+  margin:auto;
+}
+.clase4 h1{
+  text-align: center;
+  height: 118px;
+}
+.clase4 img{
+  margin-bottom: 1rem;
+}
+.clase4 ul i{
+  padding-right: 1rem;
+}
+.random{
+  padding: 1rem;
+  background-color: gray;
+  border-radius: 1rem;
+}
+
+/*********************************************/
+
