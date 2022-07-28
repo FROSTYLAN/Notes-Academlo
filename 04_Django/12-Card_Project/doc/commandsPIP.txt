@@ -1,0 +1,11 @@
+pip isntall pytest==7.12.2 -> Ejemplo de como instalar una libreria con version específica.
+pip unistall pytest -> Ejemplo de como desinstalar una librería.
+pip install -r requirements.txt  -> Instala todas las librerias de ese archivo.
+pip freeze --> Muestra todas las librerias instaladas incluidas las que se instalaron automaticamente para el funcionamiento del entorno.
+
+- Para que pytest encuentre archivos debe empezar por test
+pytest -v --> Muestra si paso un test con el nombre de test.
+pyptest -v --tb=no --> Muestra si pasó o no pasó sin información.
+pytest -vv <archivo> --> Muestra el error completo.
+pytest -v test_class.py::TestEquality --> Testea una clase especifica.
+pytest -k TestEquality --> Testea una clase
