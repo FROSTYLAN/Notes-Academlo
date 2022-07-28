@@ -1,0 +1,91 @@
+html, body {
+  margin: 0
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* GRID es un nuevo módulo de posicionamiento y es un sistema de maquetación web que divide 
+la página en una cuadrícula o rejilla (grid) a partir de la cual se pueden posicionar los 
+diferentes elementos de manera más sencilla, versátil y coherente. */
+
+/* Esta relación entre el padre y el hijo se le llama grid context */
+/* grid - container (padre) */ 
+main {
+  min-height: 100vh;
+  /* hacemos que main sea un (grid - container) */
+  display: grid;
+  /* agregamos una separación tanto en columnas como en filas con el gap (grid-gap) */
+  gap: 1rem;
+  /* definimos las filas y columnas */
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-auto-rows: 100px 100px 100px;
+}
+
+/* grid - item (hijos) */
+
+/* todo lo que este dentro del selector main aplícale estos estilos */
+main > * {
+  /* podemos usar flexbox dentro de grid y complementarlo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: burlywood;
+}
+
+div:nth-child(10) {
+  background-color: crimson;
+  /* podemos usar las propiedades grid-column-start y 
+  grid-column-end para definir el orden de las columnas */
+  /* siempre empezamos a contar desde la izquierda para columnas (grid line) */
+  grid-column-start: 3;
+  grid-column-end: 5;
+  /* también podemos usar grid-column para definir el 
+  orden de las columnas en una línea */
+  grid-column: 3 / 5;
+}
+
+div:nth-child(6) {
+  background-color: coral;
+  grid-column: 2 / 3;
+  /* podemos usar las propiedades grid-row-start y 
+  grid-row-end para definir el orden de las filas */
+  /* siempre empezamos a contar desde arriba para las filas (grid line) */
+  /* ordenas las filas en una línea */
+  grid-row: 2 / 4;
+}
+
+/* podemos usar diferentes tipos de medidas, px, rem, em, %, fr */
+
+/* también podemos usar media queries para definir el tamaño de las columnas o filas 
+dependiendo del ancho de la ventana */
+@media (min-width: 768px) {
+  main {
+    /* repeat es una función para repetir n cantidad de veces una columna o fila */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  div:nth-child(10) {
+    grid-column: 2 / -1;
+    background-color: coral;
+  }
+  div:nth-child(7) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-color: blue;
+  }
+}
+
+@media (min-width:999px) {
+  main {
+    gap: 3rem;
+  }
+  div:nth-child(10) {
+    grid-column: 1 / -1;
+  }
+  div:nth-child(7) {
+    grid-row: 3 / 4;
+  }
+}

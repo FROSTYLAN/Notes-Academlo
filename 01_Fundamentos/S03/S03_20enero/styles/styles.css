@@ -1,0 +1,99 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+/*
+div{
+    border: 5px solid tomato;
+
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    
+padding: 10px 20px 30px 15px;
+
+    padding: 20px 30px; 
+
+    padding: 20px;
+
+    /*margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    margin: 30px 40px 20px 20px;
+    margin: 30px 20px;
+
+    margin: 30px;
+    
+    width: 300px;
+    height: 400px;
+
+}
+/*
+span{
+    border: 3px solid blueviolet;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+}
+*/
+/*
+    box-sizing: content-box, border-box ;
+    Señala a partir de que zona del elemento
+    se van a calcular las dimensiones
+    (ancho y alto ) del elemento
+*/
+/*
+div{
+    border: 15px solid cyan;
+    margin: 30px;
+    padding: 50px;
+    text-align: center;
+    width: calc(100vw - 60px) ;
+    height: 100vh;
+    box-sizing: border-box;
+}
+*/
+
+
+div.contenedor{
+    border: 3px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*span.cuadrado{
+    width: 150px;
+    height: 150px;
+    border: 3px solid cyan;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+
+}*/
+
+div.cuadrado{
+    width: 150px;
+    height: 150px;
+    border: 3px solid cyan;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5rem;
+}

@@ -1,0 +1,124 @@
+/*
+:root{
+    --main-color : rgb(53, 40, 129); 
+    --box-shadow: 10px 10px 10px 10px #ccc;
+    --padding-size: 20px;
+}
+
+p{
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    padding-top: var(--padding-size);
+}
+
+h1:first-child{
+    border: 3px solid tomato;
+}
+
+p:first-of-type{
+    background-color: tomato;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+section:hover{
+    cursor: url("../assets/hamburguesa.png"), auto;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(65, 62, 62);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.25rem;
+    background-color: thistle;
+}
+
+nav>img{
+    width: 70px;
+} 
+
+nav>div img{
+    width: 50px;
+}
+
+input#menu-hamburguesa{
+    visibility:hidden;
+}
+
+input#menu-hamburguesa~ul{
+    background-color: tomato;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 300ms linear;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+article{
+    padding: .5rem;
+    border: 2px solid blueviolet;
+    margin: .5rem 0;
+}
+
+section>div{
+    text-align: center;
+}
+
+@media only screen and ( min-width:768px ) {
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+    }
+
+    input#menu-hamburguesa~ul>li{
+        padding: 0 1rem;
+    }
+
+    main{
+        display: flex;
+    }
+
+    article{
+        margin: .5rem;
+    }s
+
+    section{
+        display: flex;
+    }
+    section>div{
+        width: 60%;
+        background-color: cadetblue;
+    }
+
+    section>aside{
+        width: 30%;
+    }
+}

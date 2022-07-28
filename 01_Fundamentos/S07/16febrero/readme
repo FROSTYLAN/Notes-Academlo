@@ -1,0 +1,22 @@
+HTTP: Hypertext Transfer Protocol o Protocolo de Transferencia de Hipertexto.
+
+SERVIDORES: Son lugares donde se almacena información de forma remota.
+
+Dentro de los servidores existe el backend.
+    - Manipulación de la base de datos.
+    - Puente entre el servidor y la página.
+
+            ---Peticiones-->
+    cliente                 servidor
+            <--Respuestas---
+    
+verificación de usuario:
+    - Normalmente lo transforma en un json.
+    - Lo envía como petición al backend.
+    - El servidor devuelve una respuesta.
+    - De acuerdo a eso continua la siguiente acción.
+
+ (Method) (Path)    (version protocol)
+        GET / HTTP / 1.1
+        Host: Developer.mozilla.org  (headers)
+        accept-languaje: fr

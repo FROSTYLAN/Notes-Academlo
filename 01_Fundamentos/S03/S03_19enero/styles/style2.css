@@ -1,0 +1,43 @@
+html {
+    font-size: 25px;
+}
+
+div {
+    border: 5px solid tomato;
+}
+
+div#div-px{
+    width: 250px;
+}
+
+/* rem -> 16px, depende del tamaño de letra predefinido */
+div#div-rem{ 
+    width: 15rem;
+}
+
+/* viewWidth --> 1% del ancho de pantalla*/
+div#div-vw{
+    width: 25vw;
+}
+
+/* viewHeight --> 1% del alto de pantalla*/
+div#div-vh{
+    width: 25vh;
+}
+
+section {
+    background-color: thistle;
+    width: 800px;
+}
+
+/* determina por porcentaje */
+div#div-porcentaje {
+    width: 50%;
+}
+
+/*
+    content -> contenido.
+    padding -> espacio entre el borde y el contenido.
+    bording -> borde.
+    marging -> espacio del borde hacia afuera.
+*/

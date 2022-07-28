@@ -1,0 +1,52 @@
+
+/*
+    selector{
+        propiedad: valor;
+        propiedad2: valor2;
+    }
+
+
+    SELECTORES (Del mas general al mas particular)
+
+    Universal: selecciona TODOS los elementos
+    *{
+
+    }
+
+    Tagname/etiqueta/nombre: selecciona a todos los elementos 
+    del mismo tipo o de la misma etiqueta
+    tagname{
+
+    }
+
+    Classname/clase : Selecciona a todos los elementos que posean la misma clase
+    .clase{
+
+    }
+
+    Id/identificador unico: Selecciona al elemento que tenga el id indicado
+    #id{
+
+    }
+
+*/
+
+
+*{
+    font-size: 30px; 
+    color: black;
+}
+
+nav{
+    background-color: rgb(234, 139, 247); 
+}
+
+.nav-item{
+    border: 3px solid  green;
+}
+
+#section-contact{
+    border: 5px dotted rgb(34, 101, 139);
+    border-radius: 20px;   
+}
+

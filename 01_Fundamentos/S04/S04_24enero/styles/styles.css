@@ -1,0 +1,106 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5a5858;
+}
+
+/*
+position 
+Especifica la posicion de un elemento
+dentro del flujo
+
+static
+
+relative
+absolute
+fixed
+sticky
+
+top
+right
+bottom
+left
+
+z-index
+*/
+
+.contenedor{
+    width: 600px;
+    height: 400px;
+    border: 3px solid black;
+    margin: 1rem auto;
+    padding: 2rem;
+    position: relative;
+    top: 100px;
+}
+
+/*.contenedor>div{
+    padding: 3rem;
+    background-color: darkslateblue;
+    opacity: .5;
+}
+*/
+.p-static{
+    position: static;
+    /*top: 30px; se esta ignorando puesto que no esta posicionado*/
+}
+
+.p-relative{
+    position: relative;
+    top: 30px;
+    right: 50px;
+}
+
+.p-absolute{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 0;
+    right: 0; 
+}
+
+.p-fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+div.p-sticky{
+    padding: 3rem;
+    background-color: darkviolet;
+    position: sticky;
+    top: 0;
+}
+
+.z-index{
+    margin: .5rem;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.uno{
+    background-color: darkviolet;
+    opacity: .75;
+    position: relative;
+}
+
+.dos{
+    background-color: darkslateblue;
+    opacity: .75;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+.tres{
+    background-color: peru;
+    opacity: .75;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}

@@ -1,0 +1,35 @@
+/*
+    RESPONSIVIDAD
+
+    Capacidad de los sitios web de adaptarse a diferentes tamaños de pantallas
+
+    Mobile first 
+    Métodologia que seguimos al maquetar para asegurarnos que nuestra pagina
+    se ve de forma adecuada en dispositivos moviles 
+    y después en otros tamaños de dispositivos
+*/
+
+
+/*
+    Media queries
+
+    Media type
+
+    @media condiciones{
+        //cambios de estilo a implementar cuando las condiciones se cumplan
+    }
+*/
+/*
+breakpoint
+*/
+
+body{
+    background-color: darkslateblue;
+}
+
+@media only screen and ( max-width: 920px ){
+    body{
+        background-color: purple;
+    }
+} 
+
