@@ -1,6 +1,6 @@
 import Stack from "./Stack.js";
 
-function par_checker(string) {
+function parChecker(string) {
   const stack = new Stack();
   let balanced = true;
   let index = 0;
@@ -25,5 +25,5 @@ function par_checker(string) {
   return false;
 }
 
-const result = par_checker("((()()))");
+const result = parChecker("((()()))");
 console.log(result);
