@@ -20,3 +20,15 @@ class Node {
     this.next = nextNode;
   }
 }
+
+class List {
+  constructor() {
+    this.head = null;
+  }
+
+  add(value) {
+    const node = new Node(value);
+    node.setNext(this.head);
+    this.head = node;
+  }
+}
